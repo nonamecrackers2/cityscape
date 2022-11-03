@@ -1,0 +1,49 @@
+/*
+
+night haze: #000000
+sunrise/sunset haze: #ff6633
+afternoon haze: #ffffff
+
+night sky: #2d0059
+day sky: #3d98ff
+
+city night: #110021
+city day: #32353b
+
+*/
+
+:root {
+    --primary: #3d98ff;
+    --city-color: #32353b;
+    --city-gradient: #07000d;
+    --haze: #ffffff;
+    --text-color: white;
+
+    --night-haze: #000000;
+    --dusk-dawn-haze: #ff6633;
+    --afternoon-haze: #ffffff;
+
+    --night-sky: #2d0059;
+    --day-sky: #3d98ff;
+
+    --city-night: #110021;
+    --city-day: #32353b;
+}
+body {
+    background: radial-gradient(circle at 50% 100%, var(--haze), var(--primary) 70%);
+    text-align: center;
+    font-family: sans-serif;
+    color: var(--text-color);
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    border: 0;
+    overflow: hidden;
+    display: block;
+}
+br {
+    line-height: 50px;
+}
+.slider {
+    width: 80%;
+}
